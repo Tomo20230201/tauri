@@ -15,8 +15,8 @@ function App() {
 
     /* --- command test --- */
     const executeCommand = async () => {
-        const command1 = new Command('run-puppeteer').execute()
-        const command2 = new Command('run-npm').execute()
+        const command1 = await new Command('run-puppeteer').execute()
+        const command2 = await new Command('run-npm').execute()
     }
     executeCommand()
     /* --- command test --- */
